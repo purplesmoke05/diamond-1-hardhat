@@ -10,20 +10,17 @@ This is a reference implementation for [EIP-2535 Diamonds](https://github.com/et
 ## Installation
 
 1. Clone this repo:
-```console
-git clone git@github.com:mudgen/diamond-1-hardhat.git
-```
 
 2. Install NPM packages:
 ```console
 cd diamond-1-hardhat
-npm install
+forge init --force
 ```
 
 ## Deployment
 
 ```console
-npx hardhat run scripts/deploy.js
+make run_test
 ```
 
 ### How the scripts/deploy.js script works
@@ -38,7 +35,7 @@ How a diamond is deployed is not part of the EIP-2535 Diamonds standard. This im
 
 ## Run tests:
 ```console
-npx hardhat test
+make run_test
 ```
 
 ## Upgrade a diamond
